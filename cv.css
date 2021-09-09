@@ -1,0 +1,127 @@
+
+@media screen{
+    html, body{
+        
+        margin: .20em 1% ;	
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: rgba(241, 243, 112, 0.959);
+        }
+
+    /* titre */
+    body>header{
+        font-size: 2em;
+        font-weight: bold;
+        border: 3px solid black;
+        background-color: gray;
+        color : white; /*50px/3em;*/
+    }
+
+    /* titres du bloc main */
+    #formation>header, #expe>header {
+        font-size: 1.5em; 
+        margin: 0.625em  1px;
+        padding : 0.7% ; 
+        font-weight: bold;
+        color: white;
+        background-color: grey;
+    }
+
+    /* titre et bloc main à gauche 
+     diplômes */
+    #formation table th {
+        text-align: left;
+        font-size: 1em;
+        font-weight: bold;
+        border: 3px solid black;
+        color: black;
+        margin-bottom: 1em ;
+              
+    }
+    /* espaces entre 2 formations */
+    
+    #formation table tr:nth-child(02) td {
+        padding-bottom: 1em;
+       }
+       li {
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           font-size: 1.2em;
+       }
+         
+    /* CIVIL     ------------------------------------- */
+    /* photo identité */
+    #civil>img {
+        display: block;
+        width:25%;
+        margin:auto;
+        border: 3px solid grey;
+        border-radius: 5px;
+    }
+    
+    /* adresse de la personne */
+    #civil p {
+        margin: 0.3em 0px; 
+    }
+    .email {
+        font-size: 1em;
+        font-weight: bold;
+        border: 3px solid gray;
+        background-color: gray;
+        color : blue;
+       }
+
+    /* EXPERIENCE ------------------------------------- */
+    /* énum en expériences  */
+    #expe h1 {
+        font-size: 1.2em;
+        background-color: grey;
+        font-weight: normal;
+    }
+
+    /* séparation en 2 parties  */
+    #expe h1 span:first-of-type{
+        display: inline-block; 
+        word-wrap: break-word;
+        width:40%;	
+    }
+    
+    #expe ul {
+        margin-left : 13%; 
+    }
+       /*experience privé*/
+       #expep>header {
+        font-size: 1.5em; 
+        margin: 0.625em  0px; 
+        padding : 0.7% ; 
+        font-weight: bold;
+        color: white;
+        background-color: grey; 
+     }                                                                                                
+    #expep h1 {
+        font-size: 1.2em;
+        background-color: grey;
+        font-weight: normal;
+    }
+
+    /* séparation en 2 parties  */
+    #expep h1 span:first-of-type{
+        display: inline-block; 
+        word-wrap: break-word;
+        width:40%;	
+    }
+        #expep ul {
+        margin-left : 13%; 
+    }
+    
+    /* DIVERS ----------------------------------------- */
+    /* titres et enum en divers */ 
+    #divers>h2 {
+        background-color: gray;
+        color : white;
+        padding : 2% ; 
+    }
+
+    #divers ul {
+        list-style: none;
+        padding-left : 0px;
+    }
+}
