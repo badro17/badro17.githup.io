@@ -122,15 +122,18 @@ backend:
 
   - task: "Order management system API"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented order creation and retrieval endpoints with customer information and cart items"
+      - working: true
+        agent: "testing"
+        comment: "Order management API endpoints are functioning correctly. Successfully tested POST /api/orders for creating new orders with customer details and items, and GET /api/orders for retrieving the list of orders. Data persistence is working properly."
 
   - task: "Patient communication system API"
     implemented: true
