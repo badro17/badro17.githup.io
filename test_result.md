@@ -137,15 +137,18 @@ backend:
 
   - task: "Patient communication system API"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented conversation creation, retrieval and response endpoints for patient-pharmacy communication"
+      - working: true
+        agent: "testing"
+        comment: "Patient communication API endpoints are working as expected. Successfully tested POST /api/conversations for creating patient messages, GET /api/conversations for retrieving the list of conversations, and PUT /api/conversations/{conversation_id}/respond for adding responses to conversations. The conversation status is properly updated when responded to."
 
   - task: "Database setup with MongoDB"
     implemented: true
